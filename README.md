@@ -1,4 +1,4 @@
-# GNNASeR: Graph Neural Network Based Algorithm Selection for the Traveling Salesman Problem
+# GNNAS-TSP: Graph Neural Network Based Algorithm Selection for the Traveling Salesman Problem
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -11,7 +11,7 @@ This repository contains the training entry point, experiment split files, hyper
 ## Repository Layout
 
 ```text
-GNNASeR/
+GNNAS-TSP/
 |
 |-- main.py                         # Training / evaluation entry point
 |-- main.sh                         # Preset shell runner for main.py
