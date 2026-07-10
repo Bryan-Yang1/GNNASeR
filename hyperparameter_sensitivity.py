@@ -7,8 +7,8 @@ from pathlib import Path
 
 BASE_CONFIG = {
     "hidden_dim": 128,
-    "num_layers": 3,
-    "mlp_layers": 2,
+    "num_layers": 2,
+    "mlp_layers": 3,
     "learning_rate": 0.001,
     "decay_rate": 1.2,
     "max_epochs": 30,
@@ -116,8 +116,8 @@ def main():
     parser.add_argument("--loss_weight", type=float, default=0.5)
     parser.add_argument("--decay_every", type=int, default=5)
     parser.add_argument("--valid_ratio", type=float, default=None)
-    parser.add_argument("--train_ids_json", default="filtered_ids_10s_node_le_1000_stratified_allscarce_700_300_training.json")
-    parser.add_argument("--test_ids_json", default="filtered_ids_10s_node_le_1000_stratified_allscarce_700_300_testing.json")
+    parser.add_argument("--train_ids_json", default="data/filtered_ids_10s_node_le_1000_stratified_allscarce_700_300_training.json")
+    parser.add_argument("--test_ids_json", default="data/filtered_ids_10s_node_le_1000_stratified_allscarce_700_300_testing.json")
     parser.add_argument("--data_root", default="data")
     parser.add_argument("--instance_training_dir", default=None)
     parser.add_argument("--instance_testing_dir", default=None)
